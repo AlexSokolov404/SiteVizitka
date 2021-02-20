@@ -4,6 +4,7 @@ body{
   font-family: sans-serif;
   box-sizing: border-box;
   transition: all ease 1s;
+  margin-left: 70px;
 }
 
 /* .container{
@@ -161,4 +162,26 @@ body{
 }
 #menu.nav-active{
   margin-left: 0;
+}
+
+/* Галерея изображений-карточек */
+
+.content-img{
+    display: flex;
+    height: 100vh;
+    /* margin-left: 70px; */
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+.card{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.card img{
+    width: 250px;
+    height: 250px;
+    -webkit-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+    transition: transform 0.2s;
 }
