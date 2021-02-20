@@ -6,7 +6,7 @@ body{
   transition: all ease 1s;
 }
 
-.container{
+/* .container{
   position: relative;
   width: 78%;
   min-width: 800px;
@@ -20,7 +20,7 @@ body{
   margin-top: 20px;
   background: white;
   transition: background 0.75s;
-}
+} */
 
 
 .bottom-menu{
@@ -57,7 +57,7 @@ body{
 }
 
 
-.dinamicButton{
+/* .dinamicButton{
   position: relative;
   height: 30px;
   width: 60px;
@@ -77,7 +77,7 @@ body{
   background: white;
   transition: background 0.75s;
   cursor: pointer;
-}
+} */
 .c-buter{
   position: absolute;
   display: block;

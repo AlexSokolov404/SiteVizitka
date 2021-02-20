@@ -1,29 +1,29 @@
-let main1 = document.querySelector(".main1");
-//////////////////////////////////////////////////////////////////////
-/*Работа кнопки темной темы*/
-let dinamicButton = document.querySelector(".dinamicButton");
-let dinamicMarker = document.querySelector(".dinamicMarker");
-let bool = false;
-
-dinamicMarker.onclick = function () {
-  if(bool == false){
-    let b = 1;
-    let timerId = setInterval(() =>{dinamicMarker.style.left = b + 'px';b+=1;}, 10);
-    setTimeout(() => {clearInterval(timerId);}, 300);
-    dinamicButton.style.background = '#00e673';
-    main1.style.background = 'aqua';
-    bool = true;
-  }
-  else{
-    let b = 29;
-    let timerId = setInterval(() =>{dinamicMarker.style.left = b + 'px';b-=1;}, 10);
-    setTimeout(() => {clearInterval(timerId);}, 300);
-    dinamicButton.style.background = '#a3a3c2';
-    main1.style.background = 'white';
-    bool = false;
-  }
-
-}
+// let main1 = document.querySelector(".main1");
+// //////////////////////////////////////////////////////////////////////
+// /*Работа кнопки темной темы*/
+// let dinamicButton = document.querySelector(".dinamicButton");
+// let dinamicMarker = document.querySelector(".dinamicMarker");
+// let bool = false;
+//
+// dinamicMarker.onclick = function () {
+//   if(bool == false){
+//     let b = 1;
+//     let timerId = setInterval(() =>{dinamicMarker.style.left = b + 'px';b+=1;}, 10);
+//     setTimeout(() => {clearInterval(timerId);}, 300);
+//     dinamicButton.style.background = '#00e673';
+//     main1.style.background = 'aqua';
+//     bool = true;
+//   }
+//   else{
+//     let b = 29;
+//     let timerId = setInterval(() =>{dinamicMarker.style.left = b + 'px';b-=1;}, 10);
+//     setTimeout(() => {clearInterval(timerId);}, 300);
+//     dinamicButton.style.background = '#a3a3c2';
+//     main1.style.background = 'white';
+//     bool = false;
+//   }
+//
+// }
 
 document.querySelector(".c-buter").addEventListener('click', function(e){
   e.preventDefault();
