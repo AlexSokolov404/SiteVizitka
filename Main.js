@@ -38,3 +38,25 @@ document.querySelector(".c-buter").addEventListener('click', function(e){
     document.body.classList.add('body-active');
   }
 })
+
+// Работа 3д карточек
+
+const cards = document.querySelectorAll('.card');
+
+for (let i = 0; i< cards.length; i++) {
+    const card = cards[i];
+    card.addEventListener('mouseover', startRotate);
+    card.addEventListener('mouseout', stopRotate);
+}
+
+function startRotate(event){
+  const cardItem = this.querySelector('.card img');
+  const halfHeight = cardItem.offsetHeight / 2;
+  const halfWidth = cardItem.offsetWidth / 2;
+  console.log(-(event.offsetX - halfWidth) / 5 + ' ' + -(event.offsetY - halfHeight) / 5);
+  cardItem.style.transform = 'rotateY('+ (event.offsetX - halfWidth) / 6 + 'deg) rotateX('+ -(event.offsetY - halfHeight) / 6 +'deg)';
+}
+function stopRotate(event){
+  const cardItem = this.querySelector('.card img');
+  cardItem.style.transform = 'rotate(0)';
+}
