@@ -185,3 +185,28 @@ body{
     -o-transition: transform 0.2s;
     transition: transform 0.2s;
 }
+.layer-bg{
+  height: 600px;
+  width: 100%;
+  background: url(img/Floor.png) no-repeat;
+}
+.layer-one{
+  width: 200px;
+  height: 300px;
+  background: url(img/Man.png) no-repeat;
+}
+.layer-two{
+  width: 200px;
+  height: 300px;
+  background: url(img/Light.png) no-repeat;
+}
+.layer-three{
+  width: 200px;
+  height: 300px;
+  background: url(img/Door.png) no-repeat;
+}
+.layer-four{
+  width: 200px;
+  height: 300px;
+  background: url(img/Tablet.png) no-repeat;
+}

@@ -53,7 +53,6 @@ function startRotate(event){
   const cardItem = this.querySelector('.card img');
   const halfHeight = cardItem.offsetHeight / 2;
   const halfWidth = cardItem.offsetWidth / 2;
-  console.log(-(event.offsetX - halfWidth) / 5 + ' ' + -(event.offsetY - halfHeight) / 5);
   cardItem.style.transform = 'rotateY('+ (event.offsetX - halfWidth) / 6 + 'deg) rotateX('+ -(event.offsetY - halfHeight) / 6 +'deg)';
 }
 function stopRotate(event){
