@@ -207,3 +207,19 @@ body{
     right: 18.6%;
     top: 17%;
 }
+.Layer .Background-lamp{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(img/Light.png) no-repeat;
+    background-position: 19.2% 57.5%;
+    background-size: 7%;
+}
+.Layer .Background-man{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(img/Man.png) no-repeat;
+    background-position: 13% 61%;
+    background-size: 10%;
+}
